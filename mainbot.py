@@ -12,7 +12,7 @@ def welcome(update, context):
         username = update.message.from_user.username
         firstName = update.message.from_user.first_name
         lastName = update.message.from_user.last_name
-        message = "Olá, " + firstName + " " + lastName + ", Let's Start!"
+        message = "Olá, " + firstName + " " + lastName + "! \n\nEm que posso ajudar?"
         context.bot.send_message(chat_id=update.effective_chat.id, text=message)
     except Exception as e:
         print(str(e))
